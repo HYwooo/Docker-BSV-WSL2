@@ -7,7 +7,7 @@
 ### GET the image
 #### PULL from Github Packages
 ```bash
-docker pull ghcr.io/hywooo/docker-bsv-wsl2
+docker pull ghcr.io/hywooo/bsv-wsl2
 ```
 #### or BUILD the image
 ```bash
@@ -22,6 +22,8 @@ $ docker run -it  --name="bsv-wsl2" --hostname yourname -v //mnt/d/mybsvfile:/mn
 # /BSV_Tutorial_cn location
 ~/usr/work/BSV_Tutorial_cn
 # bsc location (ALREADY IN PATH)
-~/opt/bsc/bin/bsc 
+~/opt/bsc/bin/bsc
+# bsvbuild.sh location (ALREADY IN PATH)
+~/opt/bsc/bin
 ```
 > :sparkles: NOTED: With `VcXsrv` installed, you are enabled to interact with `gtkwave` on Windows w/o any VNCs.
