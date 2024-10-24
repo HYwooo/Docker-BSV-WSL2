@@ -1,14 +1,19 @@
 # Docker-BSV-WSL2
-:whale: Docker for the Bluespec SystemVerilog (BSV) Tutorial(CN Ver.). [![Static Badge](https://img.shields.io/badge/WangXuan95-BSV__Tutorial__cn-blue?style=flat-square&logo=github&cacheSeconds=3600)](https://github.com/WangXuan95/BSV_Tutorial_cn)
+:whale: Docker for the Bluespec SystemVerilog (BSV) Tutorial(CN Ver.)[![Static Badge](https://img.shields.io/badge/WangXuan95-BSV__Tutorial__cn-blue?style=flat-square&logo=github&cacheSeconds=3600)](https://github.com/WangXuan95/BSV_Tutorial_cn). 
 
 ![GitHub Repo stars](https://img.shields.io/github/stars/HYwooo/Docker-BSV-WSL2?style=flat-square&logo=github&color=green)
 
 ## Usage
-### BUILD the image
+### GET the image
+#### PULL from Github Packages
+```bash
+docker pull ghcr.io/hywooo/docker-bsv-wsl2
+```
+#### or BUILD the image
 ```bash
 $ docker build -f Dockerfile -t yourname/bsv-wsl2:latest .
 ```
-### ENTER the container
+###  ENTER the container
 ```bash
 $ docker run -it  --name="bsv-wsl2" --hostname yourname -v //mnt/d/mybsvfile:/mnt/mybsvfile yourname/bsv-wsl2:latest
 ```
