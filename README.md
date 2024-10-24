@@ -12,11 +12,11 @@ docker pull ghcr.io/hywooo/bsv-wsl2
 ```
 #### or BUILD the image
 ```bash
-$ docker build -f Dockerfile -t yourname/bsv-wsl2:latest .
+$ docker build -f Dockerfile -t hywooo/bsv-wsl2:latest .
 ```
 ###  ENTER the container
 ```bash
-$ docker run -it  --name="bsv-wsl2" --hostname yourname -v //mnt/d/mybsvfile:/mnt/mybsvfile yourname/bsv-wsl2:latest
+$ docker run -it --name="bsv-wsl2" --hostname yourname -v //mnt/d/mybsvfile:/mnt/mybsvfile hywooo/bsv-wsl2:latest
 ```
 ## Container structure
 ```bash
