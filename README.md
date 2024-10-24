@@ -1,5 +1,6 @@
 # Docker-BSV-WSL2
-:whale: Docker for the Bluespec SystemVerilog (BSV) Tutorial(CN Ver.)[![Static Badge](https://img.shields.io/badge/WangXuan95-BSV__Tutorial__cn-blue?style=flat-square&logo=github&cacheSeconds=3600)](https://github.com/WangXuan95/BSV_Tutorial_cn). 
+:whale: Docker for the *Bluespec SystemVerilog (BSV) Tutorial(CN Ver.)* from [![Static Badge](https://img.shields.io/badge/WangXuan95-BSV__Tutorial__cn-blue?style=flat-square&logo=github&cacheSeconds=3600)](https://github.com/WangXuan95/BSV_Tutorial_cn). 
+> ❗ For Educational Use Only.
 
 ![GitHub Repo stars](https://img.shields.io/github/stars/HYwooo/Docker-BSV-WSL2?style=flat-square&logo=github&color=green)
 
