@@ -1,7 +1,7 @@
 # Docker-BSV-WSL2
-:whale: Docker for the Bluespec SystemVerilog (BSV) tutorial [![Static Badge](https://img.shields.io/badge/WangXuan95-BSV__Tutorial__cn-blue?style=flat-square&logo=github&cacheSeconds=3600)](https://github.com/WangXuan95/BSV_Tutorial_cn).
+:whale: Docker for the Bluespec SystemVerilog (BSV) Tutorial(CN Ver.). [![Static Badge](https://img.shields.io/badge/WangXuan95-BSV__Tutorial__cn-blue?style=flat-square&logo=github&cacheSeconds=3600)](https://github.com/WangXuan95/BSV_Tutorial_cn)
 
-![GitHub Repo stars](https://img.shields.io/github/stars/HYwooo/Docker-BSV-WSL2?style=flat-square&logo=github)
+![GitHub Repo stars](https://img.shields.io/github/stars/HYwooo/Docker-BSV-WSL2?style=flat-square&logo=github&color=green)
 
 ## Usage
 ### BUILD the image
@@ -19,3 +19,4 @@ $ docker run -it  --name="bsv-wsl2" --hostname yourname -v //mnt/d/mybsvfile:/mn
 # bsc location (ALREADY IN PATH)
 ~/opt/bsc/bin/bsc 
 ```
+> :sparkles: NOTED: With `VcXsrv` installed, you are enabled to interact with `gtkwave` on Windows w/o any VNCs.
