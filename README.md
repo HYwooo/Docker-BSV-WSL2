@@ -1,7 +1,7 @@
-# Docker-BSV-WSL2
-![Static Badge](https://img.shields.io/badge/Docker-Image-blue?style=for-the-badge&logo=docker&color=blue&cacheSeconds=3600)![GitHub Repo stars](https://img.shields.io/github/stars/HYwooo/Docker-BSV-WSL2?style=for-the-badge&logo=github&cacheSeconds=3600) ![GitHub License](https://img.shields.io/github/license/HYwooo/Docker-BSV-WSL2?style=for-the-badge&logo=card&cacheSeconds=3600) 
+# 🎯Docker-BSV-WSL2
+![Static Badge](https://img.shields.io/badge/Docker-Image-blue?style=for-the-badge&logo=docker&color=blue&cacheSeconds=3600) ![Docker Pulls](https://img.shields.io/docker/pulls/hywooo/bsv-wsl2?style=for-the-badge&logo=docker&color=%23F08080&cacheSeconds=3600) ![GitHub License](https://img.shields.io/github/license/HYwooo/Docker-BSV-WSL2?style=for-the-badge&logo=card&cacheSeconds=3600) 
 
-[![Static Badge](https://img.shields.io/badge/Compatible_with-WangXuan95/BSV__Tutorial__cn-blue?style=for-the-badge&logo=github&cacheSeconds=3600&color)](https://github.com/WangXuan95/BSV_Tutorial_cn)
+[![Static Badge](https://img.shields.io/badge/Compatible_with-WangXuan95/BSV__Tutorial__cn-blue?style=for-the-badge&logo=github&cacheSeconds=3600&color=d1f2eb)](https://github.com/WangXuan95/BSV_Tutorial_cn)
 
  Docker Image for Bluespec SystemVerilog environment on WSL2, compatible with *WangXuan95/BSV_Tutorial_cn*.
 
@@ -13,7 +13,7 @@
 #### 	PULL from Github Packages
 
 ```bash
-$ docker pull ghcr.io/hywooo/bsv-wsl2
+$ docker pull hywooo/bsv-wsl2
 ```
 #### or BUILD the image
 ```bash
