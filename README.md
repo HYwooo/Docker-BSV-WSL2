@@ -1,30 +1,62 @@
 # Docker-BSV-WSL2
-:whale: Docker for the *Bluespec SystemVerilog (BSV) Tutorial(CN Ver.)* from [![Static Badge](https://img.shields.io/badge/WangXuan95-BSV__Tutorial__cn-blue?style=flat-square&logo=github&cacheSeconds=3600)](https://github.com/WangXuan95/BSV_Tutorial_cn). 
+![Static Badge](https://img.shields.io/badge/Docker-Image-blue?style=for-the-badge&logo=docker&color=blue&cacheSeconds=3600)![GitHub Repo stars](https://img.shields.io/github/stars/HYwooo/Docker-BSV-WSL2?style=for-the-badge&logo=github&cacheSeconds=3600) ![GitHub License](https://img.shields.io/github/license/HYwooo/Docker-BSV-WSL2?style=for-the-badge&logo=card&cacheSeconds=3600) 
+
+[![Static Badge](https://img.shields.io/badge/Compatible_with-WangXuan95/BSV__Tutorial__cn-blue?style=for-the-badge&logo=github&cacheSeconds=3600&color)](https://github.com/WangXuan95/BSV_Tutorial_cn)
+
+ Docker Image for Bluespec SystemVerilog environment on WSL2, compatible with *WangXuan95/BSV_Tutorial_cn*.
+
 > ❗ For educational purposes only.
 
-![GitHub Repo stars](https://img.shields.io/github/stars/HYwooo/Docker-BSV-WSL2?style=flat-square&logo=github&color=green)
 
-## Usage
-### GET the image
-#### PULL from Github Packages
+## :rocket:Usage
+### 1️⃣ GET the image
+#### 	PULL from Github Packages
+
 ```bash
-docker pull ghcr.io/hywooo/bsv-wsl2
+$ docker pull ghcr.io/hywooo/bsv-wsl2
 ```
 #### or BUILD the image
 ```bash
-$ docker build -f Dockerfile -t hywooo/bsv-wsl2:latest .
+$ docker build -f Dockerfile -t hywooo/bsv-wsl2 .
 ```
-###  ENTER the container
+### 2️⃣ ENTER the container
+
 ```bash
-$ docker run -it --name="bsv-wsl2" --hostname yourname -v //mnt/d/mybsvfile:/mnt/mybsvfile hywooo/bsv-wsl2:latest
+$ docker run -it --name="bsv-wsl2" --hostname yourname -v //path/to/wsl2/yourfiles:/path/to/yourfiles hywooo/bsv-wsl2
 ```
-## Container structure
+### 3️⃣ CHECK whether the environment is correctly set
+
 ```bash
-# /BSV_Tutorial_cn location
-~/usr/work/BSV_Tutorial_cn
-# bsc location (ALREADY IN PATH)
-~/opt/bsc/bin/bsc
-# bsvbuild.sh location (ALREADY IN PATH)
-~/opt/bsc/bin
+# /data/BSV_Tutorial_cn/src/1.Hello
+$ bsvbuild.sh -bs Hello.bsv 
+# -e ./sim.out > /dev/stdout 
+# Hello World!
+######
+$ bsvbuild.sh -vs Hello.bsv 
+# Hello World!
+# mkTb.v:41: $finish(1) called at 5 (1s) 
+######
+$ bsc
+# Usage:
+#   bsc -help  ...
+# ...
+######
+$ gtkwave
+# GTKWave Analyzer v3.3.116 (w)1999-2023 BSI
+# ...
 ```
 > :sparkles: NOTED: With `VcXsrv` installed, you are enabled to interact with `gtkwave` on Windows w/o any VNCs.
+
+### 🎉ENJOY!
+
+## 🗂️Container structure
+
+```bash
+# /BSV_Tutorial_cn location
+/data/BSV_Tutorial_cn
+# bsc location (ALREADY IN PATH)
+/opt/bsc/bin/bsc
+# bsvbuild.sh location (ALREADY IN PATH)
+/opt/bsc/bin/bsvbuild.sh
+```
+
