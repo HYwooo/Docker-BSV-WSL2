@@ -14,35 +14,39 @@
 #### 	PULL from Github Packages
 
 ```bash
-$ docker pull hywooo/bsv-wsl2
+#!/bin/bash
+docker pull hywooo/bsv-wsl2
 ```
 #### or BUILD the image
 ```bash
-$ docker build -f Dockerfile -t hywooo/bsv-wsl2 .
+#!/bin/bash
+docker build -f Dockerfile -t hywooo/bsv-wsl2 .
 ```
 ### 2️⃣ ENTER the container
 
 ```bash
-$ docker run -it --name="bsv-wsl2" --hostname yourname -v //path/to/wsl2/yourfiles:/path/to/yourfiles hywooo/bsv-wsl2
+#!/bin/bash
+docker run -it --name="bsv-wsl2" --hostname yourname -v //path/to/wsl2/yourfiles:/path/to/yourfiles hywooo/bsv-wsl2
 ```
 ### 3️⃣ CHECK whether the environment is correctly set
 
 ```bash
+#!/bin/bash
 # /data/BSV_Tutorial_cn/src/1.Hello
-$ bsvbuild.sh -bs Hello.bsv 
+bsvbuild.sh -bs Hello.bsv 
 # -e ./sim.out > /dev/stdout 
 # Hello World!
 ######
-$ bsvbuild.sh -vs Hello.bsv 
+bsvbuild.sh -vs Hello.bsv 
 # Hello World!
 # mkTb.v:41: $finish(1) called at 5 (1s) 
 ######
-$ bsc
+bsc
 # Usage:
 #   bsc -help  ...
 # ...
 ######
-$ gtkwave
+gtkwave
 # GTKWave Analyzer v3.3.116 (w)1999-2023 BSI
 # ...
 ```
