@@ -10,7 +10,7 @@
 
 
 ## :rocket:Usage
-### 1️⃣ GET the image
+### :one: GET the image
 #### 	PULL from Github Packages
 
 ```bash
@@ -22,13 +22,13 @@ docker pull hywooo/bsv-wsl2
 #!/bin/bash
 docker build -f Dockerfile -t hywooo/bsv-wsl2 .
 ```
-### 2️⃣ ENTER the container
+### :two: ENTER the container
 
 ```bash
 #!/bin/bash
 docker run -it --name="bsv-wsl2" --hostname yourname -v //path/to/wsl2/yourfiles:/path/to/yourfiles hywooo/bsv-wsl2
 ```
-### 3️⃣ CHECK whether the environment is correctly set
+### :three: CHECK whether the environment is correctly set
 
 ```bash
 #!/bin/bash
@@ -52,9 +52,9 @@ gtkwave
 ```
 > :sparkles: NOTED: With `VcXsrv` installed, you are enabled to interact with `gtkwave` on Windows w/o any VNCs.
 
-### 🎉ENJOY!
+### 🎉 ENJOY!
 
-## 🗂️Container structure
+## 🗂️ Container structure
 
 ```bash
 # /BSV_Tutorial_cn location
