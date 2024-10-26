@@ -8,8 +8,8 @@
 
 > ❗ For educational purposes only.
 
-
 ## :rocket:Usage
+
 ### :one: GET the image
 #### 	PULL from Github Packages
 
@@ -17,6 +17,7 @@
 docker pull hywooo/bsv-wsl2
 ```
 #### or BUILD the image
+
 ```bash
 docker build -f Dockerfile -t hywooo/bsv-wsl2 .
 ```
@@ -32,21 +33,24 @@ docker run -it --name="bsv-wsl2" --hostname yourname -v //path/to/wsl2/yourfiles
 bsvbuild.sh -bs Hello.bsv 
 # -e ./sim.out > /dev/stdout 
 # Hello World!
-######
+###############
+### OR 
 bsvbuild.sh -vs Hello.bsv 
 # Hello World!
 # mkTb.v:41: $finish(1) called at 5 (1s) 
-######
+###############
 bsc
 # Usage:
 #   bsc -help  ...
 # ...
-######
+###############
 gtkwave
 # GTKWave Analyzer v3.3.116 (w)1999-2023 BSI
 # ...
 ```
 > :sparkles: NOTED: With `VcXsrv` installed, you are enabled to interact with `gtkwave` on Windows w/o any VNCs.
+>
+> <center><img src="https://github.com/HYwooo/Docker-BSV-WSL2/blob/master/.asset/gtkwave.png?raw=true" style="zoom: 33%;" /></center>
 
 ### 🎉 ENJOY!
 
