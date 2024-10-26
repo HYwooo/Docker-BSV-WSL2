@@ -1,16 +1,16 @@
-# 🎯Docker-BSV-WSL2
+# 🎯 Docker-BSV-WSL2
 [![Static Badge](https://img.shields.io/badge/Docker-Image-blue?style=for-the-badge&logo=docker&color=blue&cacheSeconds=3600)](https://hub.docker.com/repository/docker/hywooo/bsv-wsl2/) [![Docker Pulls](https://img.shields.io/docker/pulls/hywooo/bsv-wsl2?style=for-the-badge&logo=docker&color=%23F08080)](https://hub.docker.com/repository/docker/hywooo/bsv-wsl2/) ![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/HYwooo/Docker-BSV-WSL2/.github%2Fworkflows%2Fdocker-publish.yml?style=for-the-badge&logo=github)
 
 [![Static Badge](https://img.shields.io/badge/Compatible_with-WangXuan95/BSV__Tutorial__cn-blue?style=for-the-badge&logo=github&cacheSeconds=3600&color=d1f2eb)](https://github.com/WangXuan95/BSV_Tutorial_cn)
 
 
- Docker Image for Bluespec SystemVerilog environment on WSL2, compatible with *WangXuan95/BSV_Tutorial_cn*.
+Docker Image for Bluespec SystemVerilog environment on WSL2, compatible with *[WangXuan95/BSV_Tutorial_cn](https://github.com/WangXuan95/BSV_Tutorial_cn)*.
 
 > ❗ For educational purposes only.
 
-## :rocket:Usage
+## 🚀 Usage
 
-### :one: GET the image
+### 1️⃣ GET the image
 #### 	PULL from Github Packages
 
 ```bash
@@ -21,12 +21,12 @@ docker pull hywooo/bsv-wsl2
 ```bash
 docker build -f Dockerfile -t hywooo/bsv-wsl2 .
 ```
-### :two: ENTER the container
+### 2️⃣ ENTER the container
 
 ```bash
 docker run -it --name="bsv-wsl2" --hostname yourname -v //path/to/wsl2/yourfiles:/path/to/yourfiles hywooo/bsv-wsl2
 ```
-### :three: CHECK whether the environment is correctly set
+### 3️⃣ CHECK whether the environment is correctly set
 
 ```bash
 # /data/BSV_Tutorial_cn/src/1.Hello
@@ -48,9 +48,9 @@ gtkwave
 # GTKWave Analyzer v3.3.116 (w)1999-2023 BSI
 # ...
 ```
-> :sparkles: NOTED: With `VcXsrv` installed, you are enabled to interact with `gtkwave` on Windows w/o any VNCs.
+> 💡 NOTED: With `VcXsrv` installed, you are enabled to interact with `gtkwave` on Windows w/o any VNCs.
 >
-> <center><img src="https://github.com/HYwooo/Docker-BSV-WSL2/blob/master/.asset/gtkwave.png?raw=true" style="zoom: 33%;" /></center>
+> <center><img src="https://github.com/HYwooo/Docker-BSV-WSL2/blob/master/.asset/gtkwave.png?raw=true" style="zoom: 10%;" /></center>
 
 ### 🎉 ENJOY!
 
