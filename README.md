@@ -24,7 +24,7 @@ docker build -f Dockerfile -t hywooo/bsv-wsl2 .
 ### 2️⃣ ENTER the container
 
 ```bash
-docker run -it --name="bsv-wsl2" --hostname yourname -v //path/to/wsl2/yourfiles:/path/to/yourfiles hywooo/bsv-wsl2
+docker run -it --name="bsv-wsl2" --hostname yourname -v /path/to/wsl2/yourfiles:/path/to/yourfiles hywooo/bsv-wsl2
 ```
 ### 3️⃣ CHECK whether the environment is correctly set
 
