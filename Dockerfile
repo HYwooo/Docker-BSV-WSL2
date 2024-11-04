@@ -1,16 +1,16 @@
 FROM ubuntu:noble
 
-LABEL org.opencontainers.image.authors="HYwooo <GITHUB.COM>" \
+LABEL org.opencontainers.image.authors="<GITHUB.COM>HYwooo" \
     org.opencontainers.image.title="bsv-wsl2" \
     org.opencontainers.image.description="Docker image for Bluespec SystemVerilog environment on WSL2,compatible with https://github.com/WangXuan95/BSV_Tutorial_cn ." \
     org.opencontainers.image.url="https://github.com/HYwooo/Docker-BSV-WSL2" \
     org.opencontainers.image.source="https://github.com/HYwooo/Docker-BSV-WSL2" \
     org.opencontainers.image.documentation="https://github.com/HYwooo/Docker-BSV-WSL2/blob/master/README.md" \
-    org.opencontainers.image.version="1.0.3" \
+    org.opencontainers.image.version="1.0.4" \
     org.opencontainers.image.licenses="MIT" 
 
 RUN sed -i 's@//.*archive.ubuntu.com@//mirrors.tuna.tsinghua.edu.cn@g' /etc/apt/sources.list.d/ubuntu.sources \
-    && apt update -y 
+    && apt update -y --fix-missing 
 
 RUN apt install -y --no-install-recommends ca-certificates g++ wget iverilog tcl-dev gtkwave git language-pack-en-base
 
