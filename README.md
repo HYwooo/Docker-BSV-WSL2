@@ -11,7 +11,7 @@ Docker Image for Bluespec SystemVerilog environment on WSL2, compatible with *[W
 ## 🚀 Usage
 
 ### 1️⃣ GET the image
-#### 	PULL from Github Packages
+#### 	PULL from Docker Hub
 
 ```bash
 docker pull hywooo/bsv-wsl2
