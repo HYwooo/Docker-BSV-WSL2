@@ -30,7 +30,7 @@ $ docker run -it --name="bsv-wsl2" --hostname yourname -v /path/to/wsl2/yourfile
 
 ```bash
 # /data/BSV_Tutorial_cn/src/1.Hello
-bsvbuild.sh -bs Hello.bsv 
+$ bsvbuild.sh -bs Hello.bsv 
 # -e ./sim.out > /dev/stdout 
 # Hello World!
 ###############
