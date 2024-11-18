@@ -6,13 +6,13 @@ LABEL org.opencontainers.image.authors="<GITHUB.COM>HYwooo" \
     org.opencontainers.image.url="https://github.com/HYwooo/Docker-BSV-WSL2" \
     org.opencontainers.image.source="https://github.com/HYwooo/Docker-BSV-WSL2" \
     org.opencontainers.image.documentation="https://github.com/HYwooo/Docker-BSV-WSL2/blob/master/README.md" \
-    org.opencontainers.image.version="1.0.4" \
+    org.opencontainers.image.version="1.0.5" \
     org.opencontainers.image.licenses="MIT" 
 
 RUN sed -i 's@//.*archive.ubuntu.com@//mirrors.tuna.tsinghua.edu.cn@g' /etc/apt/sources.list.d/ubuntu.sources \
-    && apt update -y --fix-missing 
+    && apt update -y --fix-missing &&apt install -y --no-install-recommends ca-certificates && sed -i 's/http:/https:/g' /etc/apt/sources.list.d/ubuntu.sources
 
-RUN apt install -y --no-install-recommends ca-certificates g++ wget iverilog tcl-dev gtkwave git language-pack-en-base
+RUN apt install -y --no-install-recommends g++ wget iverilog tcl-dev gtkwave git  
 
 WORKDIR /opt
 
