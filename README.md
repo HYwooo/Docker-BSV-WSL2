@@ -14,17 +14,17 @@ Docker Image for Bluespec SystemVerilog environment on WSL2, compatible with *[W
 #### 	PULL from Docker Hub
 
 ```bash
-docker pull hywooo/bsv-wsl2
+$ docker pull hywooo/bsv-wsl2:latest
 ```
 #### or BUILD the image
 
 ```bash
-docker build -f Dockerfile -t hywooo/bsv-wsl2 .
+$ docker build -f Dockerfile -t hywooo/bsv-wsl2:latest .
 ```
 ### 2️⃣ ENTER the container
 
 ```bash
-docker run -it --name="bsv-wsl2" --hostname yourname -v /path/to/wsl2/yourfiles:/path/to/yourfiles hywooo/bsv-wsl2
+$ docker run -it --name="bsv-wsl2" --hostname yourname -v /path/to/wsl2/yourfiles:/path/to/yourfiles hywooo/bsv-wsl2:latest
 ```
 ### 3️⃣ CHECK whether the environment is correctly set
 
@@ -35,16 +35,16 @@ bsvbuild.sh -bs Hello.bsv
 # Hello World!
 ###############
 ### OR 
-bsvbuild.sh -vs Hello.bsv 
+$ bsvbuild.sh -vs Hello.bsv 
 # Hello World!
 # mkTb.v:41: $finish(1) called at 5 (1s) 
 ###############
-bsc
+$ bsc
 # Usage:
 #   bsc -help  ...
 # ...
 ###############
-gtkwave
+$ gtkwave
 # GTKWave Analyzer v3.3.116 (w)1999-2023 BSI
 # ...
 ```
